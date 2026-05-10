@@ -16,17 +16,18 @@ def enterZIPbtnPressed():
     zipcode = inputZIP.get()
     print("zip code : " + zipcode)
     temp, percip, windSpeed = apisys.weatherAPI(zipcode)
-    
+
+    # add the path of images to the empty quotes
     if percip >= 0.2 and percip < 2:
-        bgIMG = tk.PhotoImage(file = "C:\\Users\\akash\\OneDrive\\Desktop\\Graduation 2026\\v2\img\\bg\\slight rain.png")
+        bgIMG = tk.PhotoImage(file = "")
         bgLABEL = tk.Label(window, image = bgIMG)
         bgLABEL.place(x = 0, y = 0)
     elif percip < 0.2:
-        bgIMG = tk.PhotoImage(file = "C:\\Users\\akash\\OneDrive\\Desktop\\Graduation 2026\\v2\img\\bg\\sunny.png")
+        bgIMG = tk.PhotoImage(file = "")
         bgLABEL = tk.Label(window, image = bgIMG)
         bgLABEL.place(x = 0, y = 0)
     elif percip > 2:
-        bgIMG = tk.PhotoImage(file = "C:\\Users\\akash\\OneDrive\\Desktop\\Graduation 2026\\v2\img\\bg\\rain.png")
+        bgIMG = tk.PhotoImage(file = "")
         bgLABEL = tk.Label(window, image = bgIMG)
         bgLABEL.place(x = 0, y = 0)
 
