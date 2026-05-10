@@ -6,6 +6,8 @@ Woather is a simple weather app made in Python 3.12.
 
 Using the package manager [pip](https://pip.pypa.io/en/stable/) paste the following commands to add the packages. (Or bash depending on which)
 
+You need to install all of the following
+
 In Bash install:
 ```bash
 python -m tkinter
